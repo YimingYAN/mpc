@@ -13,9 +13,11 @@ codes, but it does reflect the general ideas of the interior point methods.
 
 The main solver MPCSOL (/solver/mpcSol.m) only accepts LP problems 
 in the standard form, i.e.
-
-        min c'*x s.t. Ax = b, x>=0.        
-
+```
+        min c'*x 
+        s.t. Ax = b, 
+             x>=0.        
+```
 Any LP problem can be transformed to the standard form.
 
 
@@ -25,9 +27,13 @@ How To Use it
    system environment.
 
 2. If your problem is in the standard form, you can use 
-        [x, y, s, N] = mpcSol(A,b,c)
+
+    ```[x, y, s, N] = mpcSol(A,b,c)```
+
    or 
-        [x, y, s, N] = mpcSol(A,b,c, param_in, Name)
+   
+    ```[x, y, s, N] = mpcSol(A,b,c, param_in, Name)```
+    
    when you would like to specify the name of the problem and the parameters.
 
    The default value of input Name is "testProb". Regardnig to the default 
