@@ -99,9 +99,7 @@ for iter = 0:param.maxN
     %% ----- Corrector step -----
     
     % Set up right hand sides
-    Rb = sparse(m,1);
-    Rc = sparse(n,1);
-    Rxs = dx_aff.*ds_aff - sigma*mu*ones(n,1);
+    Rxs = Rxs + dx_aff.*ds_aff - sigma*mu*ones(n,1);
     
     % Get corrector's direction
     [dx_cc, dy_cc, ds_cc, ~, ~, ~] =...
