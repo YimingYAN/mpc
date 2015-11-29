@@ -1,4 +1,4 @@
-Copyright (c) 2013, Yiming Yan
+Copyright (c) 2013-2015, Yiming Yan
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
